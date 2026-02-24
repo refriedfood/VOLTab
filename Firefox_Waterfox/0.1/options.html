@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Options</title>
+  <style>
+    :root { color-scheme: light dark; }
+
+    body {
+      font-family: sans-serif;
+      font-size: 13px;
+      margin: 10px;
+      max-width: 420px;
+    }
+
+    .row { margin-bottom: 8px; }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    button {
+      margin-top: 8px;
+      padding: 2px 6px;
+      display: inline-flex;
+      width: auto !important;
+      box-sizing: border-box;
+    }
+
+    #status {
+      margin-left: 8px;
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Options</h2>
+
+  <div class="row">
+    <label>
+      <input type="checkbox" id="pageMenu">
+      Enable right-click context menu
+    </label>
+  </div>
+
+  <button id="save" style="display:inline-flex; width:auto !important; align-self:flex-start;">Save</button>
+  <span id="status"></span>
+
+  <script src="options.js"></script>
+</body>
+</html>
