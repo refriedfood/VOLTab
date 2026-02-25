@@ -29,7 +29,7 @@
       "48": "icons/slider-48.png",
       "256": "icons/slider.png"
     },
-    "default_title": "Volume",
+    "default_title": "VOLTab",
     "default_popup": "popup.html",
     "browser_style": true
   },
