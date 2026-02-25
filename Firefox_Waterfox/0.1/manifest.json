@@ -28,13 +28,6 @@
     "default_icon": "icons/slider.png",
     "browser_style": true
   },
-  "browser_specific_settings": {
-  "gecko": {
-    "data_collection_permissions": {
-      "required": ["none"]
-     }
-   }
-  },
   "content_scripts": [
     {
       "matches": [
