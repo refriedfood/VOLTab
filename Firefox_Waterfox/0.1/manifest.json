@@ -4,11 +4,16 @@
   "version": "0.1",
   "description": "Per-tab volume control for HTML media.",
   "icons": {
-    "48": "icons/slider.png"
+    "48": "icons/slider-48.png",
+    "256": "icons/slider.png"
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "refried@uncool.club"
+      "id": "{434abde6-56ba-4073-b920-329b1d022857}",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
     }
   },
   "permissions": [
@@ -18,25 +23,21 @@
     "contextMenus"
   ],
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+    "scripts": ["background.js"]
   },
   "browser_action": {
+    "default_icon": {
+      "48": "icons/slider-48.png",
+      "256": "icons/slider.png"
+    },
     "default_title": "Volume",
     "default_popup": "popup.html",
-    "default_icon": "icons/slider.png",
     "browser_style": true
   },
   "content_scripts": [
     {
-      "matches": [
-        "*://soundcloud.com/*",
-        "*://*.soundcloud.com/*"
-      ],
-      "js": [
-        "soundcloud_content.js"
-      ],
+      "matches": ["*://soundcloud.com/*", "*://*.soundcloud.com/*"],
+      "js": ["soundcloud_content.js"],
       "run_at": "document_idle",
       "all_frames": false
     }
