@@ -307,7 +307,7 @@ function tmv_pCreateMenu() {
     try {
       if (!api.contextMenus || !api.contextMenus.create) return resolve(false);
       api.contextMenus.create(
-        { id: TMV_MENU_ID, title: "Tab Volume", contexts: ["page"] },
+        { id: TMV_MENU_ID, title: "VOLTab", contexts: ["page"] },
         () => resolve(true)
       );
     } catch (e) { resolve(false); }
